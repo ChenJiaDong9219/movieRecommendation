@@ -1,0 +1,8 @@
+﻿1. user_combine_layer_flat = tf.reshape(user_combine_layer, [-1, 200]) 为什么还要把最后一层变形？
+答：因为最后要计算得分，得分等于用户特征矩阵和电影特征矩阵的乘积。所以要将用户矩阵和电影矩阵拉平。
+
+2. Session 在 tensorflow 中的作用？
+答：Session 为创建的 tensor 分配计算资源。
+
+3. Graph 在 tensorflow 中的作用？
+答：Graph 中包含运算和涉及到的 tensor。它可以明确得表现出各个 tensor 之间的运算关系。
